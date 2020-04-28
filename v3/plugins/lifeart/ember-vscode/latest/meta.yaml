@@ -1,5 +1,5 @@
 apiVersion: v2
-publisher: 	lifeart
+publisher: lifeart
 name: ember-vscode
 version: latest
 type: VS Code extension
