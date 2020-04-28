@@ -16,5 +16,10 @@ RUN mkdir /projects ${HOME} && \
     done
 ADD etc/entrypoint.sh /entrypoint.sh
 
+# Require by plugins
+RUN \
+    ember install ember-fast-cli &&\
+    
+
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
